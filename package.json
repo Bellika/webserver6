@@ -7,10 +7,12 @@
   "description": "test test test6",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "jasmine": "^4.3.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js" 
+    "test": "jasmine",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
