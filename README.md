@@ -15,7 +15,7 @@
   <h3 align="center">NHiL</h3>
 
   <p align="center">
-    Nöden har ingen lag!
+    Nöden Har ingen Lag!
   </p>
 </div>
 
