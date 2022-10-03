@@ -46,17 +46,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+lorem lorem lorem
 
 Use the `BLANK_README.md` to get started.
 
@@ -71,16 +61,6 @@ Use the `BLANK_README.md` to get started.
 <!-- GETTING STARTED -->
 
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
@@ -154,26 +134,97 @@ The commit type can include the following:
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+NHiL - [@nhil.boys](https://twitter.com/NHiL)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/kodmeron/NHiL](https://github.com/kodmeron/NHiL)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 
-## Acknowledgments
+## TEST
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+### Jasmine
 
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-- [Malven's Grid Cheatsheet](https://grid.malven.co/)
-- [Img Shields](https://shields.io)
-- [GitHub Pages](https://pages.github.com)
-- [Font Awesome](https://fontawesome.com)
-- [React Icons](https://react-icons.github.io/react-icons/search)
+If Jasmine for some reason isn't installed:
+
+> npm install --save jasmine
+
+look if it is installed correctly
+
+> npm test init
+
+Run the tests!!
+
+> npm test
+
+### TEST API
+
+Install jest and supertest:
+
+> npm install jest
+
+> npm install supertest
+
+Check if it is intalled correctly by looking inside the package.json file
+
+This is what you should see:
+
+```json
+{
+  "name": "edu-api-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "jest --verbose",
+    "test": "jest"
+  }
+}
+```
+
+Make a folder called \_\_tests\_\_ and make a file called supertest.js in the folder
+
+```
+> mkdir __tests__
+
+> cd __tests__
+
+> touch supertest.js
+
+```
+
+## supertest.js
+
+```js
+const request = require("supertest");
+
+const HOST = process.env.HOST || "https://petstore.swagger.io";
+
+afterAll(async () => {
+  await new Promise((resolve) => setTimeout(() => resolve(), 500)); // avoid jest open handle error
+});
+
+describe("When testing jest", () => {
+  describe("given i have a non failing test", () => {
+    it("should be one", () => {
+      expect(1).toBe(1);
+    });
+  });
+```
+
+This code tests the petstore API:
+
+```js
+describe("Testing petshop", () => {
+  describe("given a broken url", () => {
+    it("should return status 404", () => {
+      const container = request(HOST);
+      container.get("/whatever").expect(404);
+    });
+  });
+});
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
