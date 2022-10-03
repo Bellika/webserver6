@@ -162,11 +162,11 @@ Use this space to list resources you find helpful and would like to give credit 
 
 [contributors-shield]: https://img.shields.io/github/contributors/kodmeron/NHiL.svg?style=for-the-badge
 [contributors-url]: https://github.com/kodmeron/NHiL/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/kodmeron/NHiL.svg?style=for-the-badge
 [forks-url]: https://github.com/kodmeron/NHiL/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/kodmeron/NHiL.svg?style=for-the-badge
 [stars-url]: https://github.com/kodmeron/NHiL/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/kodmeron/NHiL.svg?style=for-the-badge
 [issues-url]: https://github.com/kodmeron/NHiL/issues
 [product-screenshot]: images/screenshot.png
 [next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
